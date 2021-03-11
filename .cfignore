@@ -1,0 +1,7 @@
+venv
+tests
+*.md
+.vscode
+.pytest_cache
+cf
+pip-tools

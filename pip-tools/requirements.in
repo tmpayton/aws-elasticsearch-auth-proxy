@@ -1,0 +1,6 @@
+cfenv
+environs
+flask
+gunicorn
+requests
+requests_aws4auth

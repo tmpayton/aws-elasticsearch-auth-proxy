@@ -1,0 +1,17 @@
+---
+###########################################################
+# NOTE: this opens your Elasticsearch instance up totally #
+# without authentication. You should only use this for    #
+# nonsensitive, nonessential data, and even then only on  #
+# internal routes!                                        #
+###########################################################
+
+version: 1
+applications:
+- name: auth-proxy
+  health_check_type: port
+  buildpacks:
+    - python_buildpack
+  no-route: true
+  services:
+    - ((elasticsearch_service))
